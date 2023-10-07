@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PopUp </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://avatars.githubusercontent.com/u/110022096?v=4"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/81d73e8e4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <button id="submitBTN" onclick="showPopUp()">Submit</button>
+      <div id="popup" class="animatePopUp">
+        <i class="fa-solid fa-circle-check"></i>
+        <h1>Thank You!</h1>
+        <p>
+          Your details has been successfully <br />
+          submitted. Thanks!
+        </p>
+        <button id="okBTN" onclick="showPopUp()">OK</button>
+      </div>
+    </div>
+    <footer>By Bharathraj</footer>
+    <script>
+      let popUp = document.querySelector('#popup');
+      function showPopUp() {
+        popUp.classList.toggle('animatePopUp');
+      }
+    </script>
+  </body>
+</html>
